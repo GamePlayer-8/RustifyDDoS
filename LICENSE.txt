@@ -1,4 +1,4 @@
-Hammer in one file.
+Hammer in one file - Rust version.
     Copyright (C) 2023 Chimmie Firefly
 
     This program is free software: you can redistribute it and/or modify
