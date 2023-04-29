@@ -46,6 +46,7 @@ Xvfb -ac :0 -screen 0 1280x1024x24 &
 sleep 5
 
 rustup-init -y
+source "$HOME/.cargo/env"
 rustup target add x86_64-unknown-linux-musl
 cargo build --release --target x86_64-unknown-linux-musl
 mv target/release/rddos ./rddos-musl
