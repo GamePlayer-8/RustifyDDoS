@@ -14,7 +14,7 @@ markdown README.md >> index.html
 echo '</body>' >> index.html
 echo '</html>' >> index.html
 
-apk add --no-cache openssl pkgconfig rust cargo git linux-headers build-base xvfb appstream tar libc6-compat curl > /dev/null
+apk add --no-cache openssl pkgconfig rustup cargo git linux-headers build-base xvfb appstream tar libc6-compat curl > /dev/null
 
 cp /ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 rm -f /etc/ssl/cert.pem
