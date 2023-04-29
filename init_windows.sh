@@ -16,7 +16,7 @@ markdown README.md >> index.html
 echo '</body>' >> index.html
 echo '</html>' >> index.html
 
-apt install --yes rust git apt-utils build-essential curl tar wget xvfb > /dev/null
+apt install --yes rust cargo git apt-utils build-essential curl tar wget xvfb > /dev/null
 
 Xvfb -ac :0 -screen 0 1280x1024x24 &
 sleep 5
