@@ -45,6 +45,7 @@ done
 Xvfb -ac :0 -screen 0 1280x1024x24 &
 sleep 5
 
+export RUSTUP_INIT_SKIP_PATH_CHECK=yes
 rustup-init -y
 source "$HOME/.cargo/env"
 rustup target add x86_64-unknown-linux-musl
