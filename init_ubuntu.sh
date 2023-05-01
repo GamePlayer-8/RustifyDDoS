@@ -16,7 +16,7 @@ markdown README.md >> index.html
 echo '</body>' >> index.html
 echo '</html>' >> index.html
 
-apt install --yes rust cargo git linux-headers-5.19.0-38-generic build-essential xvfb appstream tar lsb-release apt-utils file > /dev/null
+apt install --yes pkg-config libssl-dev openssl rustc cargo git linux-headers-5.19.0-38-generic build-essential xvfb appstream tar lsb-release apt-utils file > /dev/null
 
 Xvfb -ac :0 -screen 0 1280x1024x24 &
 sleep 5
