@@ -14,7 +14,7 @@ markdown README.md >> index.html
 echo '</body>' >> index.html
 echo '</html>' >> index.html
 
-apk add --no-cache openssl pkgconfig rustup cargo git linux-headers build-base xvfb appstream tar libc6-compat curl > /dev/null
+apk add --no-cache openssl-dev openssl pkgconfig rustup cargo git linux-headers build-base xvfb appstream tar libc6-compat curl > /dev/null
 
 cp /ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 rm -f /etc/ssl/cert.pem
@@ -50,7 +50,7 @@ rustup-init -y
 source "$HOME/.cargo/env"
 rustup target add x86_64-unknown-linux-musl
 cargo build --release --target x86_64-unknown-linux-musl
-mv target/release/rddos ./rddos-musl
+mv target/x86_64-unknown-linux-musl/release/rddos ./rddos-musl
 rm -rf target
 
 strip rddos-musl
