@@ -57,11 +57,8 @@ strip rddos-musl
 
 chmod +x rddos-musl
 
-cd /
-tar -xzf /source/installer.apk
 cd /source
 
-rm -f installer.apk
 /sbin/apk.static -X https://dl-cdn.alpinelinux.org/alpine/latest-stable/main -U --allow-untrusted -p /source/rddos.AppDir/ --initdb add --no-cache alpine-base busybox libc6-compat
 
 cd rddos.AppDir/
